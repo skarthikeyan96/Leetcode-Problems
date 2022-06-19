@@ -4,12 +4,21 @@
  * @return {number[]}
  */
 var twoSum = function(nums, target) {
-    // sort the array
+  
+    let lookup = {}
+    
+    
     for(let i=0;i<nums.length;i++){
-        for(let j= i+1;j<=nums.length;j++){
-            if(nums[i]+nums[j] === target){
-                return [i,j]
-            }
-        }
+        let diff = target - nums[i];
+        
+       if(lookup.hasOwnProperty(diff)){
+           console.log(i,lookup[diff])
+           return [lookup[diff],i]
+       }
+        lookup[nums[i]] = i
+    
+    
     }
+console.log(lookup)
+    
 };
