@@ -13,6 +13,12 @@
  */
 var isSameTree = function(p, q) {
     
+//     console.log(p)
+//     console.log(q)
+//     console.log(!p)
+//     console.log(!q)
+    
+    
     if(!p && !q) return true
     
     if(!p || !q || p.val !== q.val) return false
