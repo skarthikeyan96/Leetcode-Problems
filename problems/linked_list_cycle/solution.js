@@ -20,7 +20,6 @@ var hasCycle = function(head) {
    let previous = head;
     let current = head
     
-    let hasLinkedListCycle = false;
     
     
     while(previous !==null && previous.next !== null){
