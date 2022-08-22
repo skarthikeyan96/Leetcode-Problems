@@ -10,7 +10,6 @@ var removeElement = function(nums, val) {
         nums[i] = '_'
         count++
       }
-      // console.log(nums[i])
     }
 
   nums.sort().splice(nums.indexOf('_'),count)
